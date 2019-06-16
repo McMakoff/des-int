@@ -763,9 +763,9 @@ h1 {
   margin-bottom: 10px; }
 
 .contact {
-  padding: 75px 0; }
+  padding: 75px 0 40px; }
   .contact .marquiz__container {
-    margin: 140px auto 0; }
+    margin: 160px auto 0; }
 
 .contact__wrap {
   max-width: 310px;
@@ -812,7 +812,7 @@ h1 {
     font-family: "UniSansBold", "sans-serif"; }
 
 .main-foot {
-  padding: 20px 0; }
+  padding: 30px 0 20px; }
   .main-foot .container_big,
   .main-foot .main-foot__top,
   .main-foot .main-foot__bottom {
@@ -1123,7 +1123,7 @@ h1 {
     .contact .section-title .line {
       margin: 10px 0 0; }
   .contact .marquiz__container {
-    margin: 40px auto 0; }
+    margin: 70px auto 0; }
   .contact__wrap {
     max-width: 100%;
     padding-bottom: 0;
