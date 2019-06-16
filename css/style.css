@@ -342,7 +342,7 @@ html {
 
 body {
   font-family: 'UniSansRegular','Helvetica','Arial',sans-serif;
-  color: #000;
+  color: #2d2d2d;
   font-size: 18px;
   line-height: normal;
   font-weight: 300;
@@ -454,7 +454,7 @@ h1 {
 
 .advanteges__item {
   margin: 0 auto 10px;
-  max-width: 240px;
+  max-width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -496,8 +496,10 @@ h1 {
 .marquiz__container {
   width: auto !important;
   display: table !important;
+  cursor: pointer;
   position: relative; }
   .marquiz__container .quiz-icon {
+    display: block;
     position: absolute;
     width: 75px;
     height: 80px;
@@ -505,6 +507,7 @@ h1 {
     right: -25px;
     background: url(../img/book.png) no-repeat center;
     background-size: contain;
+    text-decoration: none;
     z-index: 1;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -1123,7 +1126,7 @@ h1 {
     .contact .section-title .line {
       margin: 10px 0 0; }
   .contact .marquiz__container {
-    margin: 70px auto 0; }
+    margin: 70px 0 0; }
   .contact__wrap {
     max-width: 100%;
     padding-bottom: 0;
