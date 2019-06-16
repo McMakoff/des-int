@@ -570,7 +570,17 @@
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script>
-		$('.work__slider, .work__gallery').slick({
+		$('.work__slider').slick({
+		  dots: false,
+		  arrows:true,
+		  infinite: false,
+		  speed: 300,
+		  slidesToShow: 1,
+		  slidesToScroll: 1
+		});
+	</script>
+	<script>
+		$('.work__gallery').slick({
 		  dots: false,
 		  arrows:true,
 		  infinite: false,
