@@ -94,6 +94,7 @@
 			<div class="container">
 				<div class="marquiz__container">
 				  <a class="marquiz__button_blicked quiz-btn marquiz__button_rounded marquiz__button_shadow" href="#popup:marquiz_5cf8eacb39293000442b6c4b">Рассчитать стоимость <span>+ получить каталог и подарок</span></a>
+				  <div class="quiz-icon"></div>
 				</div>
 				<p class="quiz-text">Вместе с расчетом стоимости вы получите каталог лучших интерьеров 2019 года и пример проектной документации</p>
 			</div>
@@ -273,7 +274,8 @@
 					</div>
 				</div>
 				<div class="marquiz__container">
-				  <a class="marquiz__button_blicked quiz-btn marquiz__button_rounded marquiz__button_shadow" href="#popup:marquiz_5cf8eacb39293000442b6c4b">Рассчитать стоимость <span>+ получить каталог и подарок</span></a>
+				  <a class="marquiz__button_blicked quiz-btn marquiz__button_rounded marquiz__button_shadow btn-up">Рассчитать стоимость <span>+ получить каталог и подарок</span></a>
+				  <div class="quiz-icon"></div>
 				</div>
 			</div>
 		</section>
@@ -287,7 +289,7 @@
 				</div>
 				<div class="main-foot__bottom">
 					<a href="#" class="politica">Политика конфиденциальности</a>
-					<p class="development">Разработка и сопровождение <br> сайта: x4business.ru</p>
+					<a href='http://x4business.ru' class="development">Разработка и сопровождение <br> сайта: x4business.ru</a>
 				</div>
 			</div>
 		</footer>
@@ -564,7 +566,6 @@
 		</div>
 	</div>
 	<!--modal-->
-	<button class="btn-up"></button>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
@@ -595,7 +596,7 @@
 			function modalOpen(btn_open, modal, btn_close) {
 				btn_open.click(function() {
 		        	modal.show();
-		        	$('.work__gallery').slick('reinit');
+		        	modal.find('.work__gallery').slick('reinit');
 		        	if(modal.find('.slick-prev').length > 1){
 		        		modal.find('.slick-prev').eq(1).remove();
 		        	}
@@ -627,14 +628,6 @@
 			modalOpen(w3btn, work3, c3btn);
 			modalOpen(w4btn, work4, c4btn);
 
-            $(window).scroll(function(){ 
-                if($(this).scrollTop()!=0){ 
-                    $('.btn-up').fadeIn(); 
-                } 
-                else{ 
-                    $('.btn-up').fadeOut(); 
-                } 
-            }); 
             $('.btn-up').click(function(){ 
                 $('body,html').animate({scrollTop:0},500); 
             });
